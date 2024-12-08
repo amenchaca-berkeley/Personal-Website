@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The AM Fan Club</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head>
+<body>
+<!-- Top Bar -->
+    <div class="top_bar">
+        <div class="left_header">
+            <h3>
+                <a href="{{ url_for('professional') }}" class="undecorated_links">Professional</a>
+                <a href="https://www.youtube.com/channel/UCsYNHZ-p86qGEgn6lXHyJrA" target="_blank" rel="noopener noreferrer" class="undecorated_links">YouTube</a>
+            </h3>
+        </div>
+
+        <div class="center_header">
+            <h1>
+                <a href="#" class="undecorated_links">Alan Menchaca</a>
+            </h1>
+        </div>
+
+        <div class="right_header">
+            <h3>
+                <a href="#interests" class="undecorated_links">Interests</a>
+                <a href="#hobbies" class="undecorated_links">Hobbies</a>
+            </h3>
+        </div>
+    </div>
+
+
+    <!--Who Am I Section?-->
+    <div class="about_me" id="who_am_i">
+        <div>
+            <img src="https://github.com/Cal-CS-61A-Staff/staff-images/raw/master/fa23/ai/alan-menchaca.jpg" alt="ME">
+        </div>
+        <div id="about_me_header">
+            <h2>Who Am I?</h2>
+            That is the question.<br>
+            <br>
+            <button id="reload_button" type="button" onclick="forRefreshButton()">RELOAD PAGE</button>
+        </div>
+        <div>
+            <img src="https://github.com/Cal-CS-61A-Staff/staff-images/raw/master/fa23/ai/alan-menchaca.jpg" alt="ME">
+        </div>
+    </div>
+
+    
+    <!--Interests-->
+    <div class="resume" id="interests">
+        <div>
+        <h3>
+            <h2>Interests</h2>
+            <em>Software Engineering</em>
+            <ul>
+                <li>But that's not what this section is for. How about....</li>
+            </ul>
+
+            <em>CUTE KITTENS</em>
+            <ul>
+                <li>Scroll for a suprise!</li>
+            </ul>
+            <em>MOVIES/SHOWS</em>
+            <ul>
+                <li>All of them.</li>
+            </ul>
+        </h3>
+
+        <div id="resume_linkedin_link">
+            Learn More: 
+            <a href="https://letterboxd.com/alanmenchaca/films/" target="_blank" rel="noopener noreferrer" class="undecorated_links">Letterboxd</a>
+        </div>
+        </div>
+
+        <img class="uncropped_photo" src="https://purepng.com/public/uploads/large/purepng.com-spiderman-gamespider-manspidermansuperherocomic-bookmarvel-comicscharacterstan-leegamesmovie-1701528655751ss6km.png" alt ="spiderman">
+    </div>
+
+
+
+    <!--Hobbies-->
+    <div class="resume" id="hobbies">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Gsel3-MhpBs?si=V5OKFXnlSVe5WkWR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <div>
+        <h3>
+            <h2>Hobbies</h2>
+            <em>Playing Piano</em>
+            <ul>
+                <li>Demo to left. </li>
+            </ul>
+            <em>Thinking About Practicing Guitar</em>
+            <ul>
+                <li>Beats actually doing it.</li>
+            </ul>
+            <em>Twiddling My Thumbs.</em>
+            <ul>
+                <li>Fun.</li>
+            </ul>
+        </h3>
+        </div>
+    </div>
+
+
+    <!--Bottom Section-->
+    <div class="personal_bottom_section">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/009/665/315/small/group-of-cute-kitty-cat-family-greeting-cartoon-png.png" alt="reward">
+
+        <div>
+            <div>
+            <h4>
+            You've Reached<br>
+            THE END.
+            </h4>
+            </div>
+
+            <div>
+                <input type="checkbox" id="feedback_checkbox">
+                <label for="feedback_checkbox">Check For Surprise</label>
+
+                <p id="message"></p>
+            </div>
+
+            <br>
+
+            <div class="joke_form_container">
+                <form id="joke_form_container">                    
+
+                    <label for="joke_form">Tell Me A Joke</label>
+                    <input type="text" id="joke_form" name="joke_form">
+                    <button type="submit">Submit</button>
+
+                </form>
+                <b><p id="joke_response_message"></p></b>
+            </div>
+
+
+        </div>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/009/665/315/small/group-of-cute-kitty-cat-family-greeting-cartoon-png.png" alt="reward">
+    </div>
+
+</body>
+</html>
+
+
+
+
